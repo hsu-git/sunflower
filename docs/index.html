@@ -20,14 +20,28 @@
           입력한 프롬프트 초안을 PTCF 공식에 따라 보강하고 '대충-빨리-잘'로
           구조화
         </p>
-        <input id="prompt-input" class="form-control mb-3" />
+        <input
+          id="prompt-key"
+          class="form-control mb-3"
+          placeholder="Gemini API KEY 입력"
+        />
+        <input
+          id="prompt-input"
+          class="form-control mb-3"
+          placeholder="프롬프트 초안 입력"
+        />
         <button class="btn btn-primary">제출</button>
       </form>
+      <section class="container">
+        <h1>결과</h1>
+        <p id="result" class="p-3"></p>
+      </section>
     </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
+    <script src="main.js"></script>
   </body>
 </html>
